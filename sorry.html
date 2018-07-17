@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>error_dog</title>
+  <link rel="stylesheet" href="sorry.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <a href="#">Error-Dog.com</a>
+    </div>
+    <hr>
+  </header>
+
+  <div class="main">
+    <div class="displayimages">
+      <script type="text/javascript">
+       var imglist = new Array(
+          "011kumakichi0327_TP_V4.jpg",
+          "MOROIMG_0591_TP_V4.jpg",
+          "tdog17030744_TP_V4.jpg",
+          "tdog17030770_TP_V4.jpg",
+          "TRTM9263_TP_V4.jpg",
+          "TS0529003_TP_V4.jpg"
+         );
+       var selectnum = Math.floor(Math.random() * imglist.length);
+       var output = "<img src=" + imglist[selectnum] + ">";
+       document.write(output);
+       //更新
+       function update(){
+         location.reload();
+       }
+      </script>
+      <noscript>
+         <img src="https___www.pakutaso.com_shared_img_thumb_011kumakichi0327.jpg" alt="花の画像">
+      </noscript>
+    </div>
+    <div class="info">
+      <p style="color: #2f4f4f;">アプリに問題が発生しました。</p>
+      <button type="button" class="btn btn-light" value="更新" onclick="update()">
+        <span style="color:#01DFD7;">再度お試しください</span>
+      </button>
+    </div>
+  </div>
+</body>
+</html>
+# error_dog
